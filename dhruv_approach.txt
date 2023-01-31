@@ -1,0 +1,7 @@
+Logic - Only the O's which are connected to the boundary somehow will not change to X. Along with them any of their neighbouring O's also wouldn't convert. So go from the boundaries and mark all the unfit O.
+
+Explanation:
+1. Taken the inputs from user and created an empty list.
+2. Traverse the boundries of the matrix and call BFS whenever encountered 'O'.
+3. In BFS, first checked the boundry limits and call BFS in all 4 adjacent sides and changed the 'O' to the 'P' and store there indexes in the list.
+4. Traverse the matrix and converted all 'O' to 'X' and all 'P' to 'O' and the desired output is printed.
